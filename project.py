@@ -1,9 +1,10 @@
 from random import randint  # Import randint from the random module
 
-secretNumber = randint(1, 20)  # Corrected the variable name
+secretNumber = randint(1, 30)  # Corrected the variable name
 print('I am thinking of a number between 1 and 20.')
+print(f"the number is {secretNumber}  ")
 
-for guessesTaken in range(1, 4):  # Changed range to 1, 4 to allow 3 guesses
+for guessesTaken in range(3):  # Changed range to 1, 4 to allow 3 guesses
     print('Take a guess.')
     guess = int(input('Pick a number between 1 and 20: '))
 
